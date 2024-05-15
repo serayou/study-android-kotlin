@@ -1,1 +1,1 @@
-# jetpack-compose-practice
+# study-android-kotlin-practice
