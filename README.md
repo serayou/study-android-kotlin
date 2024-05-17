@@ -1,4 +1,4 @@
-# study-android-kotlin-practice
+# study-android-kotlin
 
 Udemy 강의를 통한 코틀린 공부
 
