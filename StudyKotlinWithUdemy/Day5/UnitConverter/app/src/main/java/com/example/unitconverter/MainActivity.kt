@@ -71,13 +71,13 @@ fun UnitConverter() {
         val result = (inputValueDouble * conversionFactor.value * 100.0 / oConversionFactor.value).roundToInt() / 100.0
         output = result.toString()
     }
-    
+
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = "Unit Converter")
+        Text(text = "Unit Converter", style = MaterialTheme.typography.headlineLarge)
         Spacer(modifier = Modifier.height(16.dp))
         OutlinedTextField(value = input,
             onValueChange = {
@@ -142,7 +142,7 @@ fun UnitConverter() {
             }
         }
         Spacer(modifier = Modifier.height(16.dp))
-        Text(text = "Result : $output $outputUnit")
+        Text(text = "Result : $output $outputUnit", style = MaterialTheme.typography.headlineMedium)
     }
 
 }
