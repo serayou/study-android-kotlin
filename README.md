@@ -16,7 +16,7 @@ Jetpack Compose, Composable 생성, Column/Row 이해, UnitConverter 앱 만들�
 
 Remember, mutableStateOf, by, Text Style, UnitConverter 앱 만들기(2)
 
-##7일차
+## 7일차
 
 LazyColumn, AlertDialog, 람다, map, copy, let, find, MyShoppingListApp 만들기
 
