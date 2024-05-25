@@ -11,4 +11,6 @@ editedItem?.let {
   it.quantity = editedQuantity
 }
 ```
+editedItem이 null이 아닐 때 let 내부가 실행 -> null에 대한 안정성을 확보함
+
 
