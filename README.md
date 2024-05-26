@@ -24,3 +24,8 @@ LazyColumn, AlertDialog, 람다, map, copy, let, find, MyShoppingListApp 만들�
 
 MVVM, ViewModel, Model, Repository
 
+## 9일차
+
+JSON, Retrofit, Coroutine, MyRecipeApp 만들기
+
+
