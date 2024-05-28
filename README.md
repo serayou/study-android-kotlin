@@ -26,6 +26,6 @@ MVVM, ViewModel, Model, Repository
 
 ## 9일차
 
-JSON, Retrofit, Coroutine, MyRecipeApp 만들기
+JSON, Retrofit, Coroutine, suspend, MyRecipeApp 만들기
 
 
