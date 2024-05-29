@@ -44,6 +44,7 @@ fun RecipeScreen(modifier: Modifier = Modifier){
 
 @Composable
 fun CategoryScreen(categories: List<Category>){
+    //categories 를 어디서 가져오는 지는 MainViewModel 에서 처리
     LazyVerticalGrid(GridCells.Fixed(2), modifier = Modifier.fillMaxSize()){
         items(categories){
             category ->
@@ -60,7 +61,7 @@ fun CategoryItem(category: Category){
         horizontalAlignment = Alignment.CenterHorizontally)
     {
         Image(
-            painter = rememberAsyncImagePainter(category.strCategoryThumb),
+            painter = rememberAsyncImagePainter(category.strCategoryThumb), //이미지를 가져오기 위한 라이브러리 사용 (Coli)
             contentDescription = null,
             modifier = Modifier
                 .fillMaxSize()

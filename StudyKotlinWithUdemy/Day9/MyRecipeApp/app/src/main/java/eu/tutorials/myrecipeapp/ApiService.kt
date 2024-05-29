@@ -12,7 +12,7 @@ private val retrofit = Retrofit.Builder().baseUrl("https://www.themealdb.com/api
     val recipeService = retrofit.create(ApiService::class.java)
 
 interface ApiService{
-    @GET("categories.php") //URL의 마지막 부분(어떤 파일에서 데이터를 받아오는지)
+    @GET("categories.php") // URL의 EndPoint (어떤 파일에서 데이터를 받아오는지)
     suspend fun getCategories():CategoriesResponse
 
 }

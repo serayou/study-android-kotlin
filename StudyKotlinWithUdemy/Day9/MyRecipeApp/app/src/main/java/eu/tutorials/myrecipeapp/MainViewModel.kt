@@ -9,7 +9,7 @@ import java.lang.Exception
 
 class MainViewModel : ViewModel() {
 
-    private val _categorieState = mutableStateOf(RecipeState())
+    private val _categorieState = mutableStateOf(RecipeState()) // 변경 되었을 때 ui를 업데이트 하기 위해 State 생성
     val categoriesState: State<RecipeState> = _categorieState
 
     init {
