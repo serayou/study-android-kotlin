@@ -4,7 +4,24 @@
 
 ## sealed class
 
-## First-Class Functions
+## First-class citizen
+
+```
+변수에 담을 수 있다.
+
+함수의 인자로 전달할 수 있다.
+
+함수의 반환값으로 전달할 수 있다.
+```
+
+위의 조건을 충족하는 것
+
+```
+코틀린의 함수는 1급(first-class) 
+
+자바 : 함수는 클래스의 멤버의 역할을 수행
+코틀린 : 함수 자체가 하나의 변수가 될 수 있고 고차 함수의 인자로 전달되고 반환될 수 있음
+```
 
 ## 고차 함수 (Higher-Order Functions)
 
