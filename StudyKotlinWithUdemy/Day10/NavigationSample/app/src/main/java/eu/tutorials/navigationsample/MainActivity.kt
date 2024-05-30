@@ -22,9 +22,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import eu.tutorials.navigationsample.ui.theme.NavigationSampleTheme
 
 class MainActivity : ComponentActivity() {
@@ -50,13 +52,25 @@ fun MyApp(){
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = "firstscreen"){
         composable("firstscreen"){
-            FirstScreen {name->
-                navController.navigate("secondscreen/$name")
+            FirstScreen {name, age->
+                navController.navigate("secondscreen/?name=$name&age=$age")
+                // $signup? emailFromSignIn = $textEmail & passwordFromSignIn = $textPassword
             }
         }
-        composable(route = "secondscreen/{name}"){
+        composable(
+            route = "secondscreen/?name={name}&age={age}",
+            arguments = listOf(
+                navArgument("name"){
+                    type = NavType.StringType
+                },
+                navArgument("age") {
+                    type = NavType.IntType
+                }
+            )
+        ){
             val name = it.arguments?.getString("name") ?: "no name"
-            SecondScreen(name) {
+            val age = it.arguments?.getInt("age") ?: 0
+            SecondScreen(name, age) {
                 navController.navigate("firstscreen")
             }
         }
