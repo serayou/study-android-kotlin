@@ -30,4 +30,5 @@ JSON, Retrofit, Coroutine, suspend, viewModelScope, Coil, MyRecipeApp 만들기
 
 ## 10일차
 
-Navigation, 
+Navigation, NavController, NavHost, sealed class, parcelize
+
