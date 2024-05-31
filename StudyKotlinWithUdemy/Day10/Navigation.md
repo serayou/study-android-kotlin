@@ -1,5 +1,7 @@
 ## 강의 요약 (강의 제공)
 
+https://tutorials.eu/mastering-screen-navigation-with-kotlin-day-10-android-14-masterclass/
+
 ## Navigation
 
 ## sealed class
