@@ -32,3 +32,7 @@ JSON, Retrofit, Coroutine, suspend, viewModelScope, Coil, MyRecipeApp 만들기
 
 Navigation, NavController, NavHost, sealed class, parcelize
 
+## 11일차
+
+location
+
