@@ -34,5 +34,5 @@ Navigation, NavController, NavHost, sealed class, parcelize
 
 ## 11일차
 
-Permissions, Location(latitude, longitude), Context, Geocoder
+Permissions, Location(latitude, longitude), Context, Geocoder, LocationApp 만들기
 
