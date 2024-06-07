@@ -34,5 +34,5 @@ Navigation, NavController, NavHost, sealed class, parcelize
 
 ## 11일차
 
-location, Context
+Permission, location, Context
 
