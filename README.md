@@ -36,3 +36,7 @@ Navigation, NavController, NavHost, sealed class, parcelize
 
 Permissions, Location(latitude, longitude), Context, Geocoder, LocationApp 만들기
 
+## 12일차
+
+GoogleMap API 활용, MyShoppingListApp - GoogleMap 활용 추가
+
