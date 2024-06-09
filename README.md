@@ -40,3 +40,5 @@ Permissions, Location(latitude, longitude), Context, Geocoder, LocationApp 만�
 
 GoogleMap API 활용, MyShoppingListApp - GoogleMap 활용 추가
 
+## 13일차
+
