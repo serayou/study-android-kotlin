@@ -38,7 +38,10 @@ fun AddEditDetailView(
         topBar = {
             AppBarView(
                 title =if(id != 0L) stringResource(id = R.string.update_wish)else stringResource(id = R.string.add_wish)
-            ) {navController.navigateUp()}
+            ) {
+                //뒤로가기
+                navController.navigateUp()
+            }
         },
 
     ) {
@@ -73,17 +76,12 @@ fun AddEditDetailView(
                 }else{
                     // TODO AddWish
                 }
-
-
             }){
                 Text(
-                    text = if (id != 0L) stringResource(id = R.string.update_wish)
-                    else stringResource(
-                        id = R.string.add_wish
-                    ),
-                    style = TextStyle(
-                        fontSize = 18.sp
-                    )
+                    text =
+                    if (id != 0L) stringResource(id = R.string.update_wish)
+                    else stringResource(id = R.string.add_wish),
+                    style = TextStyle(fontSize = 18.sp)
                 )
             }
         }
