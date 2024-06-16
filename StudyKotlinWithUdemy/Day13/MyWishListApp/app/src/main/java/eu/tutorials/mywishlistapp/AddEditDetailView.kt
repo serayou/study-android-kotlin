@@ -34,13 +34,14 @@ fun AddEditDetailView(
     viewModel: WishViewModel,
     navController: NavController
 ){
-    Scaffold(topBar = {AppBarView(title =
-    if(id != 0L) stringResource(id = R.string.update_wish)
-    else stringResource(id = R.string.add_wish)
-    ) {navController.navigateUp()}
-    },
+    Scaffold(
+        topBar = {
+            AppBarView(
+                title =if(id != 0L) stringResource(id = R.string.update_wish)else stringResource(id = R.string.add_wish)
+            ) {navController.navigateUp()}
+        },
 
-        ) {
+    ) {
         Column(modifier = Modifier
             .padding(it)
             .wrapContentSize(),
@@ -64,6 +65,7 @@ fun AddEditDetailView(
                 } )
 
             Spacer(modifier = Modifier.height(10.dp))
+
             Button(onClick={
                 if(viewModel.wishTitleState.isNotEmpty() &&
                     viewModel.wishDescriptionState.isNotEmpty()){
@@ -105,6 +107,7 @@ fun WishTextField(
         colors = TextFieldDefaults.outlinedTextFieldColors(
             // using predefined Color
             textColor = Color.Black,
+
             // using our own colors in Res.Values.Color
             focusedBorderColor = colorResource(id = R.color.black),
             unfocusedBorderColor = colorResource(id = R.color.black),

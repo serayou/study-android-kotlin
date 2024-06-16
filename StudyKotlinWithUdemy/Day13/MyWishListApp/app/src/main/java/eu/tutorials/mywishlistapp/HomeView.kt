@@ -32,10 +32,11 @@ fun HomeView(
 ){
     val context = LocalContext.current
     Scaffold(
-        topBar = {AppBarView(title= "WishList", {
-         Toast.makeText(context, "Button Clicked", Toast.LENGTH_LONG).show()
-
-        })},
+        topBar = {
+            AppBarView(
+                title= "WishList", {Toast.makeText(context, "Button Clicked", Toast.LENGTH_LONG).show()}
+            )
+        },
         floatingActionButton = {
             FloatingActionButton(
                 modifier = Modifier.padding(all = 20.dp),
@@ -51,13 +52,9 @@ fun HomeView(
         }
 
     ) {
-        LazyColumn(modifier = Modifier
-            .fillMaxSize()
-            .padding(it)){
-            items(DummyWish.wishList){
-                wish -> WishItem(wish = wish) {
-
-            }
+        LazyColumn(modifier = Modifier.fillMaxSize().padding(it)){
+            items(DummyWish.wishList){ wish ->
+                WishItem(wish = wish, { }) // =  WishItem(wish = wish) { }
             }
         }
     }
