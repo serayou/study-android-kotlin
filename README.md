@@ -42,4 +42,4 @@ GoogleMap API 활용, MyShoppingListApp - GoogleMap 활용 추가
 
 ## 13일차
 
-Scaffold, topBar, floatingActionButton
+Scaffold, topBar, floatingActionButton, navigateUp()
