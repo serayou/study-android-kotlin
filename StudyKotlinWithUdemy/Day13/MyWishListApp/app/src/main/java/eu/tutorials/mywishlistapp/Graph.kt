@@ -5,6 +5,7 @@ import androidx.room.Room
 import eu.tutorials.mywishlistapp.data.WishDatabase
 import eu.tutorials.mywishlistapp.data.WishRepository
 
+//singleton
 object Graph {
     lateinit var database: WishDatabase
 
